@@ -19,7 +19,7 @@
 
 + (MTIRenderPipelineKernel *)kernel {
     return [[MTIRenderPipelineKernel alloc] initWithVertexFunctionDescriptor:[[MTIFunctionDescriptor alloc] initWithName:MTIFilterPassthroughVertexFunctionName]
-                                                  fragmentFunctionDescriptor:[[MTIFunctionDescriptor alloc] initWithName:@"shadowHighlightAdjust" libraryURL:MTIDefaultLibraryURLForBundle([NSBundle bundleForClass:self])]];
+                                                  fragmentFunctionDescriptor:[[MTIFunctionDescriptor alloc] initWithName:@"metalpetalshadowhighlight::shadowHighlightAdjust" libraryURL:MTIDefaultLibraryURLForBundle([NSBundle bundleForClass:self])]];
 }
 
 - (instancetype)init {
